@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Data is here</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <% for(let i =0; i<student.length;i++){ %>
+                <tr>
+                <td><%=student[i].name%></td>
+                <td><%=student[i].age%></td>
+                <td><%=student[i].email%></td>
+                </tr>
+             <% } %> -->
+
+             <% student.forEach(student=>{%>
+                  <tr>
+                <td><%=student.name%></td>
+                <td><%=student.age%></td>
+                <td><%=student.email%></td>
+                <td><a href="/ui/delete/<%=student._id %>">Delete</a></td>
+                </tr>
+
+            <% }) %>
+        </tbody>
+
+    </table>
+</body>
+</html>

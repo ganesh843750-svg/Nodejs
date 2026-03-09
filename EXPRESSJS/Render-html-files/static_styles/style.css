@@ -1,0 +1,12 @@
+        a{
+            background-color: rgb(106, 9, 198);
+            padding: 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: orangered;
+        }
